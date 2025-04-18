@@ -68,11 +68,19 @@ class="" />
 </div>
 
 
-  <audio controls id="audio1">
-    <source src="Alex-G-Harvey.mp3" type="audio/mpeg">
-    <track kind="subtitles" src="subtitles.vtt" srclang="pt" label="Turnaround-Reprise">
-    Seu navegador não suporta a tag de áudio.
-  </audio>
+<audio controls id="audio1">
+  <source src="Alex-G-Harvey.mp3" type="audio/mpeg">
+  <track kind="subtitles" src="subtitles.vtt" srclang="pt" label="Turnaround-Reprise">
+  Seu navegador não suporta a tag de áudio.
+</audio>
+
+<script>
+  window.onload = function() {
+    var audio = document.getElementById("audio1");
+    audio.play(); // Começa a tocar o áudio assim que a página for carregada
+  };
+</script>
+
   <audio controls id="audio2" style="display: none;">
     <source src="Flowed.mp3" type="audio/mpeg">
     <track kind="subtitles" src="subtitles.vtt" srclang="pt" label="C418 - Sweden (Cover)">
