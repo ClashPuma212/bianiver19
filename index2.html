@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="chiikake.png" type="image/x-icon">
+    <title>🎁ANA¹⁹Gift🎈</title>    
+</head>
+
+<body>
+
+  <img src="ARIESESTRELAS-Photoroom.png" alt="Imagem 1" 
+  style="position: absolute; left: 50px; top: 30px; z-index: 0; width: 45%; max-width: 400px;" 
+  class="imagem-oscilar" />
+
+<img src="tauros_magicBRANCO.png" alt="Imagem 2" 
+style="position: absolute; right: 50px; top: 400px; z-index: 0; width: 45%; max-width: 400px;" 
+class="imagem-oscilar" />
+
+     <!-- Terceira Imagem -->
+     <img src="blueyball-Photoroom.png" alt="Imagem 3" 
+     class="imagem-rotacionar" 
+     style="position: absolute; right: -7.5%; top: -7.5%; z-index: 0; width: 45%; max-width: 400px;" />
+
+<!-- quarta Imagem -->
+<img src="Shane_and_Charlie.png" alt="Imagem 4" 
+class="" 
+style="position: fixed; bottom: 0; left: 0; z-index: 1; width: 150px; max-width: 100%;" />
+
+<img src="sapo2-Photoroom.png" alt="Imagem 5" 
+style="position: absolute; left: 50px; top: 350px; z-index: 0; width: 35%; max-width: 300px;" 
+class="" />
+
+<img src="sapo-Photoroom.png" alt="Imagem 6" 
+style="position: fixed; top: 200px; right: 50px; z-index: 0; width: 35%; max-width: 300px;" 
+class="" />
+
+
+
+<style>
+  .tulipas-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: repeat;
+    gap: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .tulipas-container img {
+    height: 150px; /* ou ajuste como quiser */
+    flex-shrink: 0;
+  }
+</style>
+
+<div class="tulipas-container">
+  <img src="pink-tulip-bushes-on-a-transparent-background-png.png" alt="tulipa">
+  <img src="pink-tulip-bushes-on-a-transparent-background-png.png" alt="tulipa">
+  <img src="pink-tulip-bushes-on-a-transparent-background-png.png" alt="tulipa">
+  <img src="pink-tulip-bushes-on-a-transparent-background-png.png" alt="tulipa">
+  <img src="pink-tulip-bushes-on-a-transparent-background-png.png" alt="tulipa">
+  <!-- Pode repetir quantas vezes quiser -->
+</div>
+
+
+  <audio controls id="audio1">
+    <source src="Alex-G-Harvey.mp3" type="audio/mpeg">
+    <track kind="subtitles" src="subtitles.vtt" srclang="pt" label="Turnaround-Reprise">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+  <audio controls id="audio2" style="display: none;">
+    <source src="Flowed.mp3" type="audio/mpeg">
+    <track kind="subtitles" src="subtitles.vtt" srclang="pt" label="C418 - Sweden (Cover)">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+  <script>
+    var audio1 = document.getElementById("audio1");
+    var audio2 = document.getElementById("audio2");
+  
+    audio1.addEventListener("ended", function() {
+      audio2.loop = true; // Define o segundo áudio para loop
+      audio2.play(); // Inicia a reprodução do segundo áudio em loop
+      audio1.style.display = "none"; // Esconde o primeiro áudio
+      audio2.style.display = "block"; // Exibe o segundo áudio
+    });
+  </script>  
+  <div class="confetes">
+    <img src="confetes.gif" alt="Confetes">
+</div>
+  <script src="main.js"></script>
+  <div class="night"></div>
+    <div class="birthdayCard">
+        <div class="cardFront">
+            <div class="front-text">
+            <h3 class="happy">✨FELIZ✨</h3>
+            <h2 class="bday">ANIVERSÁRIO</h2> 
+            <h3 class="toyou">😚!BIA!🤗</h3>  
+        </div>
+        <div class="wrap-deco">
+            <div class="decorations"></div>
+            <div class="decorationsTwo"></div>
+        </div> 
+        <div class="wrap-decoTwo">
+            <div class="decorations"></div>
+            <div class="decorationsThree"></div>
+          </div>
+          <div class="cake-background">
+            <img src="steve&alex.jpg" alt="Background Image">
+          </div>
+          <div class="plate">
+            <div class="cake"></div>
+            <div class="flame"></div>
+          </div>
+        </div>  
+          <div class="cardInside">
+             <div class="inside-text">
+          <h3 class="happy">🎉FELIZ🥳</h3>
+          <h2 class="bday">!🍰BOLODAY🎂!</h2> 
+          <h3 class="toyou">🎈ANINHA💛</h3>  
+          </div>
+            <div class="wishes">
+            <p>!Querida estrela Bellatrix⭐!<p>
+              
+              Feliz Aniversário, gatona!!! Desejo as melhores coisas do universo pra sua vida e q tenha um ótimo dia, pq é uma pessoa magnifica e agradeço muito muito muito pela sua amizade :D Crescer e ter 19 parece assustar, mas estou aqui sempre que precisar💛</p>
+            <p class="name">-Tim amo *mwah</p>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
